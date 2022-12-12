@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+         body{
+        
+        font-family: 'Roboto', sans-serif;
+        background-color: #F8FDFE;
+       
+    }
+        .formhold{
+            border-radius: 10px;
+            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+            margin: auto;
+            margin-top: 100px;
+            margin-bottom: 100px;
+            text-align: center;
+            width: 380px;
+            height: 300px;
+            padding: 10px;
+            background-color: #FFFFFF;
+        }
+        .unandpass{
+            display: block;
+            margin: auto;
+           height:30px;
+           width:312px;
+            margin-bottom:20px;
+        }
+        button{
+            background-color: #338FCF;
+            color: #FFFFFF;
+            height:40px;
+            width:322px;
+            margin: auto;
+            border: #FFFFFF 1px solid;
+            display: block ;
+            margin-top: 9px;
+        }
+        h4{
+            font-size: 25px;
+            text-align: left;
+            margin-left: 30px;
+            font-weight: 500;
+        }
+        .container{
+            display: block;
+            margin: auto;
+           height:30px;
+           width:312px;
+           text-align: left;
+           font-size: 14px;
+        }
+    </style>
+    <title>Sign Up</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet"/>
+      <script src="https://kit.fontawesome.com/04cd54677b.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./styles/navbar.css" />
+    <link rel="stylesheet" href="./styles/footer.css" />
+</head>
+<body>
+    <div id="navbar"></div>
+    <div id="mobNavbar" data-mobNavbar="0"></div>
+    <div class="formhold">
+        <h4>Sign up</h4>
+    <input class="unandpass" type="text" id="username" placeholder=" Username"/>
+    <input class="unandpass" type="text" id="password" placeholder=" Password"/>
+    <label class="container">
+        <input type="checkbox"> Terms and conditions
+        <span class="checkmark"></span>
+      </label>
+    <button onclick="signup()">Sign Up</button>
+        </div>
+
+        <div id="footer" ></div>
+</div>
+<script type="module">
+  import {navbar,mobNavbar} from './components/navbar.js'
+  let navbarContainer = document.querySelector("#navbar");
+  navbarContainer.innerHTML = navbar();
+  
+  let mobnavbarContainer = document.querySelector("#mobNavbar");
+  mobnavbarContainer.innerHTML = mobNavbar();
+  
+  import footer from './components/footer.js'
+  let footerContainer = document.querySelector("#footer");
+  footerContainer.innerHTML = footer;
+</script>
+<script src="./scripts/navbar.js"></script>
+</body>
+</html>
+<script>
+
+let logins=JSON.parse(localStorage.getItem("logins")) || [];
+class User{
+    //#username;
+    //#password;
+    constructor(){
+        this.organization='masai'; 
+    }
+    validateUsername(username){                             //use #
+    //let value= username.includes('@') ? false : true;
+    let value=true;
+    return value;
+    }
+    validatePassword(password){
+        //let value= password.includes('123') ? false : true;
+       let value=true;
+        return value;
+        }
+    signUp(username ,password){
+       let isValidated=false;
+      isValidated= this.validateUsername() && this.validatePassword();
+      if(isValidated){
+          this.username=username; //this.#username
+          this.password=password;
+          alert("User Registered Successfully");
+          
+          let data={
+            username:username,
+            password:password,
+        }
+          logins.push(data);
+          localStorage.setItem("logins",JSON.stringify(logins));
+
+      }else{
+          alert('Please Enter Correct Details');
+      }
+    }
+   
+}
+function signup(){
+    let username=document.getElementById('username').value;
+    let password=document.getElementById('password').value;
+    let s1= new User();
+    s1.signUp(username,password);
+    //console.log(s1);
+}
+</script>

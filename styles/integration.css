@@ -1,0 +1,122 @@
+
+.content_data>div{
+    text-align: center;    
+}
+.content_data>div>img{
+    width:100%;
+}
+.content_data>div>img:hover{
+    border:1px solid rgb(112, 203, 231);
+    cursor:pointer;
+}
+
+.top_portion{
+    text-align: center;
+}
+hr{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+#bottom_portion1{
+    margin-top: 10em;
+    padding:8% 1% 8% 1%;
+    background-color: #f7fcff;
+}
+#bottom_portion>button{
+    background-color: #0288D1;
+    border: 0px;
+    color: white;
+    height:8%; 
+    width:30%;
+    border-radius: 5px;
+    margin-top: 2%;
+    justify-content: center;
+    cursor: pointer;
+}
+
+
+@media (min-width:768px){
+    .top_portion{
+        margin:1% 20% 1% 20%;
+        align-items: center;
+    }
+    .content_box{
+        margin:1% 20% 1% 20%;
+    }
+    .content_data{
+        display: grid;
+        margin-top: 40px;
+        margin-bottom: 20px;
+        grid-template-columns: repeat(5,1fr);
+        column-gap:20px;
+        row-gap: 20px;
+       
+    }
+    #bottom_portion{
+        margin:auto;
+        font-size: larger;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    #bottom_portion>div{
+        display: flex;
+        width:35%;
+        margin: auto;
+        justify-content: space-between;
+    }
+    
+
+}
+
+@media (min-width:481px) and (max-width:768px){
+    .content_data{
+        display: grid;
+        margin-top: 40px;
+        /* padding:10px 300px 100px 300px; */
+        grid-template-columns: repeat(4,1fr);
+        column-gap:20px;
+        row-gap: 20px;
+       
+    }
+    body{
+        padding:10px 40px 20px 40px ;
+    }
+    
+    #bottom_portion{
+        margin:auto;
+        font-size: medium;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    #bottom_portion>div{
+        display: none;
+    }
+   
+}
+@media (max-width:480px){
+    .content_data{
+        display:grid;
+        margin-top:20px;
+        grid-template-columns: repeat(2,1fr);
+        column-gap: 2px;
+        row-gap: 5px;
+    }
+    body{
+        padding: 5px 20px 5px 20px;
+    }
+   
+    #bottom_portion{
+        margin:auto;
+        font-size: smaller;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    #bottom_portion>div{
+        display: none;
+        
+    }
+   
+}

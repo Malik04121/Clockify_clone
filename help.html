@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Help Center</title>
+    <link rel="stylesheet" href="./styles/help.css">
+    <link rel="icon" href="favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+      <script src="https://kit.fontawesome.com/04cd54677b.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./styles/navbar.css" />
+    <link rel="stylesheet" href="./styles/footer.css" />
+</head>
+<body>
+    <div id="navbar"></div>
+    <div id="mobNavbar" data-mobNavbar="0"></div>
+    <!-- Navbar Here -->
+
+
+    <div id="input">
+      <p>How can we help?</p>
+     <div>
+        <input type="text" placeholder="Find anything (ex. approval,invite,or reset password)" />
+        <button>Search</button>
+        <img
+        src="https://clockify.me/help/wp-content/themes/pumble-learn/assets/images/arrow-right-circle-pink.svg"
+        alt=""
+      />
+     </div>
+    </div>
+    <div id="container">
+      <div class="item1">
+        <img
+          src="https://clockify.me/help/wp-content/uploads/2022/04/category-getting-started.svg"
+          alt=""
+        />
+        <p>Getting Started</p>
+        <p>How to start using Clockify from scratch.</p>
+      </div>
+      <div class="item2">
+        <img
+          src="https://clockify.me/help/wp-content/uploads/2022/04/category-time-tracking.svg"
+          alt=""
+        />
+        <p>Time Tracking</p>
+        <p>Timer, timesheet, kiosk, auto tracker, and calendar.</p>
+      </div>
+      <div class="item3">
+        <img
+          src="https://clockify.me/help/wp-content/uploads/2022/04/category-apps.svg"
+          alt=""
+        />
+        <p>Apps</p>
+        <p>Clockify for Windows, Mac, i0S, Android, and Chrome.</p>
+      </div>
+      <div class="item4">
+        <img
+          src="https://clockify.me/help/wp-content/uploads/2022/04/category-reporting.svg"
+          alt=""
+        />
+        <p>Reports</p>
+        <p>Analyzing, filtering, sharing, and exporting data.</p>
+      </div>
+      <div class="item5">
+        <img
+          src="https://clockify.me/help/wp-content/uploads/2022/04/category-projects.svg"
+          alt=""
+        />
+        <p>Projects</p>
+        <p>Managing projects and tasks, and tracking progress.</p>
+      </div>
+      <div class="item6">
+        <img
+          src="https://clockify.me/help/wp-content/uploads/2022/04/category-users.svg"
+          alt=""
+        />
+        <p>Users</p>
+        <p>Inviting users and controlling who can do what.</p>
+      </div>
+      <div class="item7">
+        <img
+          src="https://clockify.me/help/wp-content/uploads/2022/04/category-extra-features.svg"
+          alt=""
+        />
+        <p>Extras</p>
+        <p>Subscription, billing, and paid features.</p>
+      </div>
+      <div class="item8"></div>
+      <div class="item9"></div>
+    </div>
+
+    <div id="content">
+      <p>Featured articles</p>
+      <div>
+        <p>
+          <img
+            src="https://clockify.me/help/wp-content/themes/pumble-learn/assets/images/arrow-right-circle-pink.svg"
+            alt=""
+          />
+          Custom fields
+        </p>
+        <p>
+          <img
+            src="https://clockify.me/help/wp-content/themes/pumble-learn/assets/images/arrow-right-circle-pink.svg"
+            alt=""
+          />
+          Kiosk
+        </p>
+        <p>
+          <img
+            src="https://clockify.me/help/wp-content/themes/pumble-learn/assets/images/arrow-right-circle-pink.svg"
+            alt=""
+          />
+          Auto tracker
+        </p>
+        <p>
+          <img
+            src="https://clockify.me/help/wp-content/themes/pumble-learn/assets/images/arrow-right-circle-pink.svg"
+            alt=""
+          />
+          Upgradation & Subscription
+        </p>
+        <p>
+          <img
+            src="https://clockify.me/help/wp-content/themes/pumble-learn/assets/images/arrow-right-circle-pink.svg"
+            alt=""
+          />
+          Time off
+        </p>
+        <p>
+          <img
+            src="https://clockify.me/help/wp-content/themes/pumble-learn/assets/images/arrow-right-circle-pink.svg"
+            alt=""
+          />
+          Scheduling
+        </p>
+        <p>
+          <img
+            src="https://clockify.me/help/wp-content/themes/pumble-learn/assets/images/arrow-right-circle-pink.svg"
+            alt=""
+          />
+          Hourly rates
+        </p>
+        <p>
+          <img
+            src="https://clockify.me/help/wp-content/themes/pumble-learn/assets/images/arrow-right-circle-pink.svg"
+            alt=""
+          />
+          Import clients & projects
+        </p>
+        <p>
+          <img
+            src="https://clockify.me/help/wp-content/themes/pumble-learn/assets/images/arrow-right-circle-pink.svg"
+            alt=""
+          />
+          Who can do what(permissions)
+        </p>
+      </div>
+    </div>
+
+
+    <!-- Footer Here -->
+    <div id="footer" ></div>
+    <script type="module">
+      import {navbar,mobNavbar} from './components/navbar.js'
+      let navbarContainer = document.querySelector("#navbar");
+      navbarContainer.innerHTML = navbar();
+      
+      let mobnavbarContainer = document.querySelector("#mobNavbar");
+      mobnavbarContainer.innerHTML = mobNavbar();
+      
+      import footer from './components/footer.js'
+      let footerContainer = document.querySelector("#footer");
+      footerContainer.innerHTML = footer;
+    </script>
+    <script src="./scripts/navbar.js"></script>
+</body>
+</html>

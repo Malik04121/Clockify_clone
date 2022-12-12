@@ -1,0 +1,792 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+  
+        
+        body{
+        
+            font-family: 'Roboto', sans-serif;
+            background-color: #F8FDFE;
+           
+        }
+        #heading{
+            text-align: center;
+            color: #3D4853;
+            font-size: 40px;
+            font-weight:50;
+            margin-bottom: 10px;
+            margin-top: 50px;
+        }
+        #headpara{
+            text-align: center;
+            justify-content: center;
+            color: #909CA8;
+            font-weight:40;
+            margin: auto;
+            width: 46%;
+            line-height: 30px;
+            margin-bottom: 15px;
+        }
+        .bluetext{
+            color: #42B1F5;
+        }
+        .rating{
+            display:flex;
+            justify-content: center;
+            margin: auto;
+           color: #ABB9C0;
+           margin-top: 5px;
+           width:300px;
+           padding-bottom: 15px;
+
+        }
+        .brands{
+            height:100%;
+            margin: auto;
+        }
+
+        .brands2{
+           margin-top: 80px;
+           margin-bottom: 48px;
+            align-items: center;
+            height:100%;
+            width: 200%;
+            margin-left:-500px;
+            
+
+        }
+        #brandsimg{
+            width: 80%;
+            margin: auto;
+            margin-left: 10%;
+        }
+
+        .workingappimg{
+            height:100%;
+            margin: auto;
+        }
+        #imagechange{
+            width: 80%;
+            margin: auto;
+            margin-left: 10%;
+        }
+        .cont {
+        margin: auto;
+        height: 40px;
+        margin: auto;
+        text-align: center;
+}
+
+.click input {
+  position: absolute;
+  opacity: 0;
+}
+
+.click {
+    margin: auto;
+  display: block;
+  font-size: 20px; 
+  height: 1em;
+  width: 2em;
+  background: #BDB9A6;
+  border-radius: 1em;
+}
+
+.click div {
+  height: 1em;
+  width: 1em;
+  border-radius: 1em;
+  background: #FFF;
+  box-shadow: 0 0.1em 0.3em rgba(0,0,0,0.3);
+  -webkit-transition: all 300ms;
+    -moz-transition: all 300ms;
+    transition: all 300ms;
+}
+
+.click input:checked + div {
+  -webkit-transform: translate3d(100%, 0, 0);
+     -moz-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+}
+#bigbluebutton{
+    
+    display: block;
+    margin:auto;
+    background-color: #2677BD;
+    color: #D7E3EA;
+    border: 1px white solid;
+    border-radius: 5px;
+    height: 56px;
+    font-size: 16px;
+    width: 330px;
+    margin-bottom: 20px;
+}
+.gridhead{
+    text-align: center;
+            color: #3D4853;
+            font-size: 36px;
+            font-weight:01;
+            margin-bottom: 10px;
+            margin-top: 50px;
+}
+.gridpara{
+            text-align: center;
+            color: #6F7E8C;
+            font-size: 130%;
+            font-weight:50;
+            margin: auto;
+            width: 48%;
+            line-height: 30px;
+            margin-bottom: 15px;
+        }
+
+        .boxkatitle{
+            text-align: left;
+            color: #3D4853;
+            font-size: 26px;
+            font-weight:10;
+            margin-bottom: 20px;
+            margin-left:10%;
+            
+        }
+        .boxkadesc{
+            color: #78909C;
+            font-size: 105%;
+            font-weight:1;
+            text-align: left;
+            line-height: 30px;
+            margin-left:10%;
+            margin-right:10%;
+            
+        }
+        .theboxes{
+         height: 260px;
+         width: 400px;
+         margin:20px;
+         box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+         padding: 10px 20px 10px 20px;
+         margin: auto;
+        }
+        .boxeskagrid{
+           
+            padding-top: 30px;
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            width:90%;
+            gap:50px;
+            justify-content: center;
+            align-items: center;
+            margin: auto;
+        }
+        .whiteback{
+            width: 100%;
+            background-color: #FFFFFF;
+            margin-top: 70px;
+            padding-top: 20px;
+            padding-bottom: 50px;
+            margin-bottom: 50px;
+        }
+        .learnmore{
+         display: block;
+         color: #2677BD;
+         font-size: 16px;
+         text-align:left;
+         font-weight: 400;
+         margin-left:10%;
+        }
+        .learnmore:hover{
+        cursor: pointer;
+      }
+        .learnmore2{
+         display: block;
+         color: #2677BD;
+         font-size: 14px;
+         text-align:center;
+         font-weight: 400;
+         margin-top:-10px;
+        }
+        .learnmore2:hover{
+        cursor: pointer;
+      }
+        
+        #freeforeva{
+
+            margin: auto;
+            text-align: center;
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            width: 50%;
+        }
+        .blocka{
+            text-align: left;
+        }
+        .bluetextbig{
+            font-size: 80px;
+            color: #42B1F5;
+        }
+        .appsimg{
+            display: block;
+            margin:auto;
+            align-items: center;
+            
+        }
+        h5{
+            text-align: center;
+            display: block;
+            font-weight: 600;
+        }
+        .blueout{
+            border: 1px solid #399CE0;
+            font-size: 20px;
+            border-radius: 5px;
+            font-weight: 10%;
+            color: #399CE0;
+            background-color: #F7FCFE;
+            width :140px;
+            padding-top:5px ;
+            padding-bottom:5px ;
+        }
+        .blueout:hover{
+            border: 1px solid #399CE0;
+            font-size: 20px;
+            border-radius: 5px;
+            font-weight: 10%;
+            color: #F7FCFE;
+            background-color: #399CE0;
+            width :140px;
+            padding-top:5px ;
+            padding-bottom:5px ;
+        }
+        .hldbtn{
+            margin-top: 30px;
+            display: flex;
+            padding-left: 20%;
+            padding-right: 20%;
+            gap:8px;
+            justify-content: center;
+        }
+        .smalltext{
+            display: block;
+            color: #7A919D;
+            text-align: center;
+            margin-bottom: -40px;
+            font-weight: 10;
+        }
+        .smalltext2{
+            display: block;
+            color: #7A919D;
+            text-align: center;
+            font-size: 15px;
+            font-weight: 10;
+        }
+        .littletxt{
+            display: block;
+            color: #7A919D;
+            text-align: center;
+            font-weight: 10;
+        }
+        .hoverblue:hover{
+            color: #399CE0;
+        }
+        .borders{
+            padding-bottom: 20px;
+            margin-bottom: 80px;
+            height: 80px;
+            box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
+        }
+        .fleximg{
+           height: 30px;
+           margin: auto;
+        }
+        .flextxt{
+            font-weight: 10;
+        }
+        .divhldbtn{
+            width:140px;
+            height: 200px;
+            text-align: center;
+        }
+        #reviewsbox{
+            display: grid;
+            grid-template-columns: repeat(6,1fr);
+            gap:10px;
+            width: 110%;
+            align-items: center;
+            margin-left:-50px;
+        }
+        .review{
+            padding-top: 8px;
+            height: 180px;
+            width: 240px;
+            padding-left: 25px;
+            padding-right: 20px;
+            box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+        }
+        .rvhead{
+            padding-bottom: 0;
+            margin-bottom: 0;
+            font-size: 15px;
+            color: #707F8D;
+        }
+        .rvrating{
+            padding-top: 0;
+            margin-top: 4px;
+            color: #F9C947;
+            
+        }
+        .rvcont{
+            font-weight: 10;
+            font-size: 15px;
+            color: #8693A1;
+        }
+        .rvname{
+            font-weight: 10;
+            font-size: 10px;
+            color: #8693A1;
+            font-style: italic;
+        }
+        .timebox{
+            padding-left: 35%;
+        }
+        .tmhead{
+            font-size: 18px;
+            color: #78909C;
+            font-weight: 570;
+        }
+        .tmhead2:hover{
+        cursor: pointer;
+      }
+        .tmhead2{
+            color:#3D4853;
+            font-size: 16px;
+            font-weight: 600;
+        }
+        .tmhead2:hover{
+            color: #399CE0;
+        }
+        .timedesc{
+            margin-top: -10px;
+            font-size: 15px;
+            color: #78909C;
+            font-weight: 1;
+        }
+        /* Medium Screen */
+      @media only screen and (min-width: 500px) and (max-width: 768px) {
+        .boxeskagrid{
+           
+           padding-top: 30px;
+           display: grid;
+           grid-template-columns: repeat(1,1fr);
+           width:90%;
+           gap:50px;
+           justify-content: center;
+           align-items: center;
+           margin: auto;
+       }
+       #freeforeva{
+            margin: auto;
+            text-align: center;
+            display: grid;
+            grid-template-columns: repeat(1,1fr);
+            width: 50%;
+            }
+      }
+       /* Small Screen */
+       @media only screen and (min-width: 320px) and (max-width: 499px) {
+        .boxeskagrid{
+           
+           padding-top: 30px;
+           display: grid;
+           grid-template-columns: repeat(1,1fr);
+           width:90%;
+           gap:50px;
+           justify-content: center;
+           align-items: center;
+           margin: auto;
+       }
+       #freeforeva{
+            margin: auto;
+            text-align: center;
+            display: grid;
+            grid-template-columns: repeat(1,1fr);
+            width: 50%;
+            }
+      }
+      button:hover{
+        cursor: pointer;
+      }
+    </style>
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet"/>
+      <script src="https://kit.fontawesome.com/04cd54677b.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./styles/navbar.css" />
+    <link rel="stylesheet" href="./styles/footer.css" />
+</head>
+<body>
+    <div id="navbar"></div>
+    <div id="mobNavbar" data-mobNavbar="0"></div>
+    <h1 id="heading">The most popular free <span class="bluetext">time tracker </span>for teams</h1>
+    <h3 id="headpara">Time tracking software used by millions. Clockify is a time tracker and timesheet app that lets you track work hours across projects. Unlimited users, free forever.</h3>
+    <div class="rating"><img src="https://clockify.me/assets/images/stars-small.svg">4000+ reviews</div>
+    <button id="bigbluebutton"> START TRACKING TIME -- IT'S FREE </button>
+   <div class="brands"><img id="brandsimg" src="https://clockify.me/assets/images/customers-light-gray-3.svg"></div>
+   <div class="workingappimg"><img id="imagechange" src="https://clockify.me/assets/images/time-tracker-screenshot.svg"></div>
+   
+   <div class="cont">
+    <label class="click"><input id="check" type="checkbox" onclick="cat()" />    <div></div>
+    </label>
+  </div>
+  <div class="whiteback">
+  <h2 class="gridhead">Time management features</h2>
+<h4 class="gridpara">Track productivity, attendance, and billable hours with a simple time tracker and timesheet.</h4>
+
+<div class="boxeskagrid">
+<div class="timebox">
+<h3 class="tmhead">TIMEKEEPING</h3>
+<h3 class="tmhead2">Timer</h3>
+<h3 class="timedesc">Track work hours in real time.</h3>
+<h3 class="tmhead2">Timesheet</h3>
+<h3 class="timedesc">Enter time in a weekly timesheet.</h3>
+<h3 class="tmhead2">Calendar</h3>
+<h3 class="timedesc">Visually block out and manage time.</h3>
+<h3 class="tmhead2">Auto tracker</h3>
+<h3 class="timedesc">Track apps and websites you use.</h3>
+<h3 class="tmhead2">Kiosk</h3>
+<h3 class="timedesc">Clock in from a shared device.</h3>
+</div>
+
+<div><img src="https://clockify.me/assets/images/feature-time-tracker-methods.svg"></div>
+<div><img src="https://clockify.me/assets/images/feature-time-reporting-activity.svg"></div>
+
+<div class="timebox">
+    <h3 class="tmhead">REPORTING</h3>
+    <h3 class="tmhead2">Reports</h3>
+    <h3 class="timedesc">Analyze and export tracked time.</h3>
+    <h3 class="tmhead2">Activity</h3>
+    <h3 class="timedesc">See who works on what.</h3>
+    <h3 class="tmhead2">Rates</h3>
+    <h3 class="timedesc">See earnings, cost, and profit.</h3>
+    <h3 class="tmhead2">Progress</h3>
+    <h3 class="timedesc">Track project estimates and budget.</h3>
+    <h3 class="tmhead2">Location</h3>
+    <h3 class="timedesc">See visited sites and routes.</h3>
+    </div>
+
+<div class="timebox">
+        <h3 class="tmhead">MANAGEMENT</h3>
+        <h3 class="tmhead2">Scheduling</h3>
+        <h3 class="timedesc">Schedule work, assignments, and shifts.</h3>
+        <h3 class="tmhead2">Time off</h3>
+        <h3 class="timedesc">Manage leaves and holidays.</h3>
+        <h3 class="tmhead2">Approval</h3>
+        <h3 class="timedesc">Submit and approve timesheets.</h3>
+        <h3 class="tmhead2">invoicing</h3>
+        <h3 class="timedesc">Create invoices from billable time.</h3>
+        <h3 class="tmhead2">Expenses</h3>
+        <h3 class="timedesc">Record project expenses and fees.</h3>
+    </div>
+
+
+<div><img src="https://clockify.me/assets/images/feature-team-scheduling.svg"></div>
+
+
+
+
+
+
+
+</div>
+</div>
+
+
+<h2 class="gridhead">Time tracking apps</h2>
+<h4 class="gridpara">Clockify works across devices. Track time from anywhere — all data is synced online.</h4>
+<div class="boxeskagrid">
+    
+    <div><img class="appsimg" src="https://clockify.me/assets/images/time-tracking-app-desktop.png">
+        <h5>DESKTOP APP</h5>
+        <div class="hldbtn">
+        <button class="blueout">Windows</button>
+        <button class="blueout">Mac</button>
+        <button class="blueout">Linux</button>
+        </div>
+    </div>
+    <div><img class="appsimg" src="https://clockify.me/assets/images/time-tracking-app-web.png">
+        <h5>WEB APP</h5>
+        <div class="hldbtn">
+            <button class="blueout">Edge</button>
+            <button class="blueout">Chrome</button>
+            <button class="blueout">Firefox</button>
+            </div>
+    </div>
+    <div><img class="appsimg" src="https://clockify.me/assets/images/time-tracking-app-mobile.png">
+        <h5>MOBILE APP</h5>
+        <div class="hldbtn">
+            <button class="blueout">Android</button>
+            <button class="blueout">iOS</button>
+            </div>
+    </div>
+    <div><img class="appsimg" src="https://clockify.me/assets/images/time-tracking-app-kiosk.png">
+        <h5>KIOSK APP</h5>
+        <div class="hldbtn">
+            
+            <button class="blueout">Any Device</button>
+            
+            </div>
+    </div>
+
+    </div>
+
+
+<div class="whiteback">
+<h2 class="gridhead">Why track time with Clockify</h2>
+
+<div class="boxeskagrid">
+    <div class="theboxes">
+        
+        <h3 class="boxkatitle">Boost productivity</h3>
+        <h6 class="boxkadesc">Track time you spend on activities, see where your time goes, and improve your time management skills.</h6>
+        <h6 class="learnmore">
+            Learn more →
+        </h6>
+    </div>
+    
+    <div class="theboxes">
+        
+        <h3 class="boxkatitle">Bill clients</h3>
+        <h6 class="boxkadesc">Track billable time and expenses, show clients how much you've worked, see how much you've earned, and create invoices.</h6>
+        <h6 class="learnmore">
+            Learn more →
+        </h6>
+    </div>
+    <div class="theboxes">
+        
+        <h3 class="boxkatitle">Manage team</h3>
+        <h6 class="boxkadesc">Track time you spend on activities, see where your time goes, and improve your time management skills.</h6>
+        <h6 class="learnmore">
+            Learn more →
+        </h6>
+    </div>
+    <div class="theboxes">
+        
+        <h3 class="boxkatitle">Business intelligence</h3>
+        <h6 class="boxkadesc">Track time and analyze your company's efficiency across projects, clients, departments, and employees.</h6>
+        <h6 class="learnmore">
+            Learn more →
+        </h6>
+    </div>
+   
+</div>
+</div>
+<div id="freeforeva">
+    <div class="blocka"><img id="freeforeverimg" src="https://clockify.me/assets/images/free-forever-clock-4.svg"/></div>
+    <div class="blocka"><h1 class="bluetextbig">FREE</h1>
+    <h1 class="bluetext">FOREVER!</h1>
+    <p>
+        <span class="bluetext">    ✓ </span> Unlimited users<br>
+        <span class="bluetext">    ✓ </span> Unlimited tracking<br>
+        <span class="bluetext">    ✓ </span>  Unlimited projects<br>
+    </p>
+    <p class="bluetext">Upgrade →</p>
+</div>
+</div>
+
+<div class="whiteback">
+<h6 class="smalltext">#1 SUPPORT IN SOFTWARE</h6>
+<h2 class="gridhead">World-class customer support</h2>
+<h6 class="gridpara">We're here 24 hours a day, every day of the week, including holidays.</h4>
+    <div class="hldbtn">
+        
+        <div class="divhldbtn">
+            <img class="fleximg" src="https://clockify.me/assets/images/support-phone.svg">
+            <h2 class="flextxt">24/7</h2>
+            <h6 class="littletxt">support anytime, anywhere</h6>
+        </div>
+        <div class="divhldbtn">
+            <img class="fleximg" src="https://clockify.me/assets/images/support-mail.svg">
+            <h2 class="flextxt">1h</h2>
+            <h6 class="littletxt">average response time</h6>
+        </div>
+        <div class="divhldbtn">
+            <img class="fleximg" src="https://clockify.me/assets/images/support-heart.svg">
+            <h2 class="flextxt">95%</h2>
+            <h6 class="littletxt">satisfaction score (12k+ ratings)</h6>
+        </div>
+        <div class="divhldbtn">
+            <img class="fleximg" src="https://clockify.me/assets/images/support-uptime.svg">
+            <h2 class="flextxt">99.99%</h2>
+            <h6 class="littletxt">highest uptime levels</h6>
+        </div>
+        
+
+        </div>
+ <div class="hldbtn"><button class="blueout">Contact us</button></div>
+ <h6 class="smalltext">EMAIL • PHONE • CHAT</h6>
+ <div class="borders">
+ </div>
+ 
+
+
+<h6 class="smalltext">#1 RATED SOFTWARE</h6>
+<h2 class="gridhead">Join millions of happy users</h2>
+<h6 class="gridpara">Clockify is the best rated time tracking software with <span class="hoverblue">4,000+ reviews.</span></h4>
+    <div class="brands2"><img id="brandsimg" src="https://clockify.me/assets/images/customer-feedback-logo-expanded-3.svg"></div>
+    
+    <div id="reviewsbox">
+
+<div class="review">
+<h3 class="rvhead">Great experience</h3>
+<h3 class="rvrating">★★★★★</h3>
+<h3 class="rvcont">It has really helped me become more organized and handle tasks more effectively.</h3>
+<h3 class="rvname">— Lauren Leonard, Illustrator</h3>
+</div>
+
+<div class="review">
+     <h3 class="rvhead">A game-changer for remote work</h3>
+    <h3 class="rvrating">★★★★★</h3>
+    <h3 class="rvcont">I can track on my phone - a few taps and I'm ready to get onto my work.</h3>
+    <h3 class="rvname">— Kerri MacKay, Coordinator</h3>
+</div>
+<div class="review">
+    <h3 class="rvhead">It has greatly improved our business</h3>
+   <h3 class="rvrating">★★★★★</h3>
+   <h3 class="rvcont">we had no idea of how long we were spending on each event.</h3>
+   <h3 class="rvname">— Hilary Raeside, Executive Assistant</h3>
+</div>
+<div class="review">
+    <h3 class="rvhead">Grows with you!</h3>
+   <h3 class="rvrating">★★★★★</h3>
+   <h3 class="rvcont">I love how Clockify allows my contractors to independently log billable hours.</h3>
+   <h3 class="rvname">— Cameron Suorsa, Entrepreneur</h3>
+</div>
+<div class="review">
+    <h3 class="rvhead">An amazing experience!</h3>
+   <h3 class="rvrating">★★★★★</h3>
+   <h3 class="rvcont">Works exactly like you'd hope, feature-rich, and has helped us realize profits.</h3>
+   <h3 class="rvname">— Torre Capistran, Entrepreneur</h3>
+</div>
+<div class="review">
+    <h3 class="rvhead">Affordable price and support</h3>
+   <h3 class="rvrating">★★★★★</h3>
+   <h3 class="rvcont">New features appearing every month. Great and helpful customer support.</h3>
+   <h3 class="rvname">— Maciej Tkaczyk, Manager</h3>
+</div>
+<div class="review">
+    <h3 class="rvhead">Grows with you!</h3>
+   <h3 class="rvrating">★★★★★</h3>
+   <h3 class="rvcont">I love how Clockify allows my contractors to independently log billable hours.</h3>
+   <h3 class="rvname">— Cameron Suorsa, Entrepreneur</h3>
+</div>
+<div class="review">
+    <h3 class="rvhead">An amazing experience!</h3>
+   <h3 class="rvrating">★★★★★</h3>
+   <h3 class="rvcont">Works exactly like you'd hope, feature-rich, and has helped us realize profits.</h3>
+   <h3 class="rvname">— Torre Capistran, Entrepreneur</h3>
+</div>
+<div class="review">
+    <h3 class="rvhead">Affordable price and support</h3>
+   <h3 class="rvrating">★★★★★</h3>
+   <h3 class="rvcont">New features appearing every month. Great and helpful customer support.</h3>
+   <h3 class="rvname">— Maciej Tkaczyk, Manager</h3>
+</div>
+<div class="review">
+    <h3 class="rvhead">Great experience</h3>
+    <h3 class="rvrating">★★★★★</h3>
+    <h3 class="rvcont">It has really helped me become more organized and handle tasks more effectively.</h3>
+    <h3 class="rvname">— Lauren Leonard, Illustrator</h3>
+    </div>
+    
+    <div class="review">
+         <h3 class="rvhead">A game-changer for remote work</h3>
+        <h3 class="rvrating">★★★★★</h3>
+        <h3 class="rvcont">I can track on my phone - a few taps and I'm ready to get onto my work.</h3>
+        <h3 class="rvname">— Kerri MacKay, Coordinator</h3>
+    </div>
+    <div class="review">
+        <h3 class="rvhead">It has greatly improved our business</h3>
+       <h3 class="rvrating">★★★★★</h3>
+       <h3 class="rvcont">we had no idea of how long we were spending on each event.</h3>
+       <h3 class="rvname">— Hilary Raeside, Executive Assistant</h3>
+    </div>
+    <div class="review">
+        <h3 class="rvhead">Grows with you!</h3>
+       <h3 class="rvrating">★★★★★</h3>
+       <h3 class="rvcont">I love how Clockify allows my contractors to independently log billable hours.</h3>
+       <h3 class="rvname">— Cameron Suorsa, Entrepreneur</h3>
+    </div>
+    <div class="review">
+        <h3 class="rvhead">Affordable price and support</h3>
+       <h3 class="rvrating">★★★★★</h3>
+       <h3 class="rvcont">New features appearing every month. Great and helpful customer support.</h3>
+       <h3 class="rvname">— Maciej Tkaczyk, Manager</h3>
+    </div>
+    <div class="review">
+        <h3 class="rvhead">An amazing experience!</h3>
+       <h3 class="rvrating">★★★★★</h3>
+       <h3 class="rvcont">Works exactly like you'd hope, feature-rich, and has helped us realize profits.</h3>
+       <h3 class="rvname">— Torre Capistran, Entrepreneur</h3>
+    </div>
+    <div class="review">
+        <h3 class="rvhead">Affordable price and support</h3>
+       <h3 class="rvrating">★★★★★</h3>
+       <h3 class="rvcont">New features appearing every month. Great and helpful customer support.</h3>
+       <h3 class="rvname">— Maciej Tkaczyk, Manager</h3>
+    </div>
+    <div class="review">
+        <h3 class="rvhead">An amazing experience!</h3>
+       <h3 class="rvrating">★★★★★</h3>
+       <h3 class="rvcont">Works exactly like you'd hope, feature-rich, and has helped us realize profits.</h3>
+       <h3 class="rvname">— Torre Capistran, Entrepreneur</h3>
+    </div>
+    </div>
+</div>
+<h2 class="gridhead">Start tracking time with Clockify</h2>
+<h6 class="smalltext2">24/7 Support   •   Cancel Anytime   •   Free Forever</h4>
+    <button id="bigbluebutton">CREATE FREE ACCOUNT</button>
+    <h6 class="learnmore2">133,000 people signed up last month</h6>
+
+
+    <div class="whiteback">
+    <div id="footer" ></div>
+    </div>
+    <script type="module">
+      import {navbar,mobNavbar} from './components/navbar.js'
+      let navbarContainer = document.querySelector("#navbar");
+      navbarContainer.innerHTML = navbar();
+      
+      let mobnavbarContainer = document.querySelector("#mobNavbar");
+      mobnavbarContainer.innerHTML = mobNavbar();
+      
+      import footer from './components/footer.js'
+      let footerContainer = document.querySelector("#footer");
+      footerContainer.innerHTML = footer;
+    </script>
+    <script src="./scripts/navbar.js"></script>
+</body>
+</html>
+
+<script>
+    let num=document.getElementById("check").value;
+    let imgs=document.getElementById("imagechange");
+    count=0;
+    function cat() {
+        count++;
+    
+        if(count%2!==0){
+            imgs.src="https://clockify.me/assets/images/time-tracker-dark-screenshot.svg";
+        
+        }else{
+            imgs.src="https://clockify.me/assets/images/time-tracker-screenshot.svg";
+        }
+    
+    }
+    //<img class="icons" src="">
+    
+</script>

@@ -1,0 +1,132 @@
+/* 1st section */
+#tut1 {
+  text-align: center;
+  margin-top: 70px;
+}
+#tut1 > p:first-child {
+  font-size: 38px;
+}
+#tut1 > p:nth-child(2) {
+  color: gray;
+  font-size: larger;
+  margin-top: -20px;
+}
+#tut1 > a {
+  color: #53adf5;
+}
+#tut1 > hr {
+  color: gray;
+  margin: 75px 23%;
+}
+#tut1 > hr + p {
+  font-size: xx-large;
+}
+#tut1 > hr + p + p {
+  color: gray;
+  font-size: 21px;
+}
+.hov:hover {
+  text-decoration: underline;
+}
+
+/* 2nd section */
+#tut2 {
+  margin: 5% 24% 10% 24%;
+}
+#tut2 > p > span {
+  color: white;
+  background-color: #3d4853;
+  font-size: 17px;
+  padding: 0.7%;
+}
+.tut2_data {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 45px;
+  margin-top: 30px;
+}
+.tut2_data > div {
+  text-align: left;
+  margin-top: 5px;
+}
+.tut2_data > div > a > img:hover {
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+  transform: scale(1.01);
+}
+.tut2_data > div > p {
+  color: #e1d9ce;
+  font-size: 14px;
+  margin: 5px 0px;
+}
+.tut2_data > div > p + p {
+  color: gray;
+  font-size: 14px;
+}
+
+@media (max-width: 768px) {
+  #tut2 {
+    margin: 5% 5%;
+  }
+  .tut2_data {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* 3rd section */
+#tut2 > .colr1 > span {
+  background-color: #116fff;
+}
+
+/* 4th section */
+#tut2 > .colr2 > span {
+  background-color: #3f55b2;
+}
+
+/* 5th section */
+#tut2 > .colr3 > span {
+  background-color: #9b2eac;
+}
+
+/* 6th section */
+#tut3 {
+  background-color: #f7fcff;
+  padding: 100px 0 150px 0;
+  text-align: center;
+}
+#tut3 > p:first-child {
+  font-size: 32px;
+}
+#tut3 > p:nth-child(2) {
+  color: gray;
+}
+#tut3 > button {
+  color: white;
+  background-color: #0288d1;
+  border: none;
+  border-radius: 3%;
+  font-size: 17px;
+  padding: 20px 50px;
+  margin-top: 40px;
+}
+#tut3 > button:hover {
+  background-color: #3f55b2;
+}
+#tut3 > a {
+  color: #0288d1;
+  font-size: small;
+}
+#tut3 > a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  #tut3 {
+    padding: 40px 0;
+  }
+  #tut3 > p:nth-child(2) {
+    display: none;
+  }
+  #tut3 > button {
+    margin-top: 0px;
+  }
+}

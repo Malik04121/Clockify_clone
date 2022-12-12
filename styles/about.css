@@ -1,0 +1,342 @@
+
+#about{
+    width:70%;
+    margin: auto;
+    margin-top:90px ;
+    text-align: center;
+}
+#about>p:nth-child(1){
+    font-family: Roboto,sans-serif;
+    font-size: 36.8px;
+    font-weight: 400;
+    line-height: 47.44px;
+    color:rgb(51, 51, 51);
+}
+#about>p:nth-child(2){
+    font-family: Roboto,sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    margin-top: -10px;
+    color:rgb(90, 107, 123);
+}
+#what,#inq,#free{
+    width:65%;
+    margin: auto;
+    margin-top:60px ;
+}
+#paint{
+    width:65%;
+    margin: auto;
+}
+#what>p:nth-child(1),#inq>p:nth-child(1),#free>p:nth-child(1){
+    font-family: Roboto,sans-serif;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 41.6px;
+    color:rgb(51, 51, 51);
+}
+#what>p:nth-child(2),#what>p:nth-child(3),.inq,.free,.free1{
+    font-family: Roboto,sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color:rgb(90, 107, 123);
+}
+#what>p:nth-child(2),#inq>p:nth-child(2),#free>p:nth-child(2){
+    margin-top: -10px;
+}
+#rat{
+    width:78%;
+    margin: auto;
+    margin-top: -10px;
+    display: grid;
+    text-align: center;
+    grid-template-columns: repeat(4,1fr);
+}
+#rat>p:nth-child(1),#rat>p:nth-child(2),#rat>p:nth-child(3),#rat>p:nth-child(4){
+    font-family: Roboto,sans-serif;
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 26px;
+    color:rgb(3, 169, 244);
+}
+#rat>p:nth-child(5),#rat>p:nth-child(6),#rat>p:nth-child(7),#rat>p:nth-child(8){
+    font-family: Roboto,sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 12px;
+    color:rgb(90, 107, 123);
+    margin-top: -10px;
+}
+#p{
+    font-family: Roboto,sans-serif;
+    font-size: 25.6px;
+    font-weight: 400;
+    line-height: 33.28px;
+    color:rgb(68, 68, 68);
+}
+#grid{
+    width:100%;
+    margin: auto;
+    display: flex;
+    margin-top: -15px;
+    gap:15px;
+}
+#grid>div{
+    width: 50%;
+    height: auto;
+    padding: 20px;
+    transition: transform .1s;
+    border-radius: 7px;
+    text-align: center;
+    cursor: pointer;
+}
+#grid>div:nth-child(1){
+    background-color: #673AB7;
+}
+#grid>div:nth-child(2){
+    background-color: #EF5483;
+}
+#grid>div:hover{
+    transform: scale(1.05);
+    /* transition:ease-in-out; */
+}
+#grid>div>p:nth-child(2){
+    font-family: Roboto,sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    margin-top: 4px;
+    line-height: 21px;
+    color:white;
+}
+#grid>div>img:nth-child(1){
+    width: 70%;
+}
+#free>div{
+    width:85%;
+    margin: auto;
+}
+#box{
+    width: 100%;
+    background-image: url("https://clockify.me/assets/images/usa-map-2.svg");
+    background-size: 100% 100%;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 0px;
+}
+#box>div{
+    width: auto;
+    height: auto;
+    background-color: white;
+    text-align: center;
+    padding: 30px 50px;
+    box-shadow: rgb(159, 217, 246) 0px 1px 14px 1px;
+    border-radius: 4px;
+    /* box-shadow: rgb(230, 246, 254) 0px 1px 14px 1px; */
+}
+#box>div>p:nth-child(1){
+    font-family: Roboto,sans-serif;
+    font-size: 16px;
+    line-height: 32px;
+    font-weight: 700;
+    color: rgb(90, 107, 123);
+}
+#box>div>p:nth-child(2),#box>div>p:nth-child(3),#box>div>p:nth-child(4){
+    font-family: Roboto,sans-serif;
+    font-size: 16px;
+    line-height: 32px;
+    font-weight: 400;
+    color: rgb(90, 107, 123);
+    margin-top: -14px;
+}
+#box>div>p:nth-child(5), #box>div>p:nth-child(6){
+    font-family: Roboto,sans-serif;
+    font-size: 17px;
+    line-height: 32px;
+    font-weight: 400;
+    color: rgb(3, 169, 244);
+    margin-top: -14px;
+    cursor: pointer;
+}
+#box>div>p:nth-child(5):hover, #box>div>p:nth-child(6):hover{
+    text-decoration: underline;
+}
+
+
+/* media query */
+@media all and (min-width:821px) and (max-width:1240px){
+    #what,#inq,#free,#paint{
+        width:800px;
+    }
+    #rat{
+        width:800px;
+    }
+    #box{
+        background-image: url("https://clockify.me/assets/images/usa-map-2.svg");
+        background-size:100%;
+        background-position:center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+       
+    }
+}
+@media all and (min-width:431px) and (max-width:820px){
+    #rat{
+        display: grid;
+        grid-template-areas: 
+        "a b"
+        "e f"
+        "c d"
+        "g h";
+        column-gap: 100px;
+        width:50%;
+    }
+     .item1 {
+        grid-area: a;
+      }
+      .item2 {
+        grid-area: b;
+      }
+      .item3 {
+        grid-area: c;
+      }
+      .item4 {
+        grid-area: d;
+      }
+      .item5 {
+        grid-area: e;
+      }
+      .item6 {
+        grid-area: f;
+      }
+      .item7 {
+        grid-area: g;
+      }
+      .item8 {
+        grid-area: h;
+      }
+      #free>div{
+        width: 100%;
+        
+      }
+      .free1{
+        font-size: 13.6px;
+      }
+      #what,#inq,#free,#paint{
+        width:95%;
+    }
+    #what>p:nth-child(1),#inq>p:nth-child(1),#free>p:nth-child(1){
+        font-family: Roboto,sans-serif;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 31.2px;
+        color:rgb(51, 51, 51);
+    }
+    #what>p:nth-child(2),#what>p:nth-child(3),.inq,.free,.free1{
+        font-family: Roboto,sans-serif;
+        font-size: 14.4px;
+        font-weight: 400;
+        line-height: 20.8px;
+        color:rgb(90, 107, 123);
+    }
+    #p{
+        font-size: 17.6px;
+        font-weight: 700;
+        line-height: 22.88px;
+    }
+    #box{
+        background-image: url("https://clockify.me/assets/images/usa-map-2.svg");
+        background-size:100%;
+        background-position:center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+}
+@media all and (min-width:250px) and (max-width:430px){
+    #rat{
+        display: grid;
+        grid-template-areas: 
+        "a"
+        "e"
+        "b"
+        "f"
+        "c"
+        "g"
+        "d"
+        "h";
+        column-gap: 100px;
+        width:50%;
+    }
+     .item1 {
+        grid-area: a;
+      }
+      .item2 {
+        grid-area: b;
+      }
+      .item3 {
+        grid-area: c;
+      }
+      .item4 {
+        grid-area: d;
+      }
+      .item5 {
+        grid-area: e;
+      }
+      .item6 {
+        grid-area: f;
+      }
+      .item7 {
+        grid-area: g;
+      }
+      .item8 {
+        grid-area: h;
+      }
+      #free>div{
+        width: 100%;
+        
+      }
+      .free1{
+        font-size: 13.6px;
+      }
+      #what,#inq,#free,#paint{
+        width:95%;
+    }
+    #grid{
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+    #grid>div{
+        width: 88%;
+    }
+    #what>p:nth-child(1),#inq>p:nth-child(1),#free>p:nth-child(1){
+        font-family: Roboto,sans-serif;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 31.2px;
+        color:rgb(51, 51, 51);
+    }
+    #what>p:nth-child(2),#what>p:nth-child(3),.inq,.free,.free1{
+        font-family: Roboto,sans-serif;
+        font-size: 14.4px;
+        font-weight: 400;
+        line-height: 20.8px;
+        color:rgb(90, 107, 123);
+    }
+    #p{
+        font-size: 17.6px;
+        font-weight: 700;
+        line-height: 22.88px;
+    }
+    #box{
+        background-image: url("https://clockify.me/assets/images/usa-map-2.svg");
+        background-size:100%;
+        background-position:center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+}

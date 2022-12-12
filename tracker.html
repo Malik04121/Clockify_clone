@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tracker</title>
+    <link rel="stylesheet" href="./styles/tracker.css">
+</head>
+<body>
+  <div id="navTop">
+    <div>
+      <i class="fa-solid fa-bars"></i>
+      <img onclick="goTo()"
+        src="https://clockify.me/assets/images/clockify-logo.svg"
+        alt="err"
+      />
+    </div>
+    <div>
+      <p id="name"></p>
+      <button>UPGRADE</button>
+      <img
+        src="https://app.clockify.me/assets/nav-icons/notification.svg"
+        alt="err"
+      />
+    </div>
+  </div>
+
+  <div id="input">
+    <div id="iTop">
+      <input type="text" placeholder="What are You Working on?" id="enter" />
+      <img
+        src="https://app.clockify.me/assets/ui-icons/plus-blue.svg"
+        alt="err"
+      />
+      <p>Project</p>
+    </div>
+    <div id="iBot">
+      <div>
+        <img
+          src="https://app.clockify.me/assets/ui-icons/tag-gray.svg"
+          alt="err"
+        />
+      </div>
+      <div>
+        <img
+          src="https://app.clockify.me/assets/ui-icons/play.svg"
+          alt="err"
+        />
+      </div>
+      <div>
+        <div id="timer">00:00:00</div>
+        <button onclick="clickStart()">START</button>
+        <button onclick="clickStop()" id="add">STOP</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="container"></div>
+</body>
+</html>
+<script src="./scripts/tracker.js"></script>
